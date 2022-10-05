@@ -4,13 +4,44 @@
 	<meta charset="utf-8">
 	<!-- definir teclado padrão com acentuação ç~...-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Testando o bootstrap</title>
+	<title>Lovat Veiculos</title>
 
 	<!-- Iniciando css do bootstrap -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+
+	<!-- Iniciando font-awesome ( icones ) -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-warning">
+			<a class="navbar-brand text-dark" href="#"><img src="logomini.png"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link text-dark" href="index.html"><i class="fa fa-home fa-2x" aria-hidden="true"></i>
+						 Inicío <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-dark" href="comprar.html"><i class="fa fa-cart-plus fa-2x" aria-hidden="true"></i>
+						 Comprar</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-dark" href="vender.html">
+						<i class="fa fa-usd fa-2x" aria-hidden="true"></i>
+ 						Vender</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-dark" href="alugar.html"><i class="fa fa-handshake-o fa-2x" aria-hidden="true"></i>
+ 					Alugar</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
 		<!-- criamos o nosso menu do site -->
 		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 			<ol class="carousel-indicators">
@@ -43,8 +74,12 @@
 	<main>
 		<!-- colocamos o nosso conteúdo do site -->
 		<div class="container">
-			<h1>Aprendendo Bootstrap</h1>
-			<p>Primeiro site feito em Bootstrap</p>
+			<br>
+			<div class="p-3 mb-2 bg-warning text-dark text-center font-weight-bold">Carros em Destaque</div>
+
+
+			<p class="text-center">Super-esportivo</p>
+
 			<div class="row">
 				<div class="col-sm">
 					<div class="card" style="width: 18rem;">
@@ -52,9 +87,13 @@
 						<div class="card-body">
 							<h5 class="card-title">GTR R35</h5>
 							<p class="card-text">1000CV</p>
-							<a href="#" class="btn btn-primary">Comprar</a>
+							<p class="text-white bg-danger">R$ 780.000</p>
+
+							<a href="#" class="btn btn-warning"><i class="fa fa-cart-plus fa-2x" aria-hidden="true"></i></a>
+							<a href="#" class="btn btn-warning"><i class="fa fa-eye fa-2x"></i></a>
 						</div>
 					</div>
+					<br>
 				</div>
 				<div class="col-sm">
 					<div class="card" style="width: 18rem;">
@@ -62,9 +101,13 @@
 						<div class="card-body">
 							<h5 class="card-title">GTR R35</h5>
 							<p class="card-text">1000CV</p>
-							<a href="#" class="btn btn-primary">Comprar</a>
+							<p class="text-white bg-danger">R$ 780.000</p>
+
+							<a href="#" class="btn btn-warning"><i class="fa fa-cart-plus fa-2x" aria-hidden="true"></i></a>
+							<a href="#" class="btn btn-warning"><i class="fa fa-eye fa-2x"></i></a>
 						</div>
 					</div>
+					<br>
 				</div>
 				<div class="col-sm">
 					<div class="card" style="width: 18rem;">
@@ -72,19 +115,13 @@
 						<div class="card-body">
 							<h5 class="card-title">GTR R35</h5>
 							<p class="card-text">1000CV</p>
-							<a href="#" class="btn btn-primary">Comprar</a>
-						</div>
-					</div>				 
-				</div>
-				<div class="col-sm">
-					<div class="card" style="width: 18rem;">
-						<img class="card-img-top" src="gtr.jpg" alt="Imagem de capa do card">
-						<div class="card-body">
-							<h5 class="card-title">GTR R35</h5>
-							<p class="card-text">1000CV</p>
-							<a href="#" class="btn btn-primary">Comprar</a>
+							<p class="text-white bg-danger">R$ 780.000</p>
+
+							<a href="#" class="btn btn-warning"><i class="fa fa-cart-plus fa-2x" aria-hidden="true"></i></a>
+							<a href="#" class="btn btn-warning"><i class="fa fa-eye fa-2x"></i></a>
 						</div>
 					</div>
+					<br>
 				</div>
 				<div class="col-sm">
 					<div class="card" style="width: 18rem;">
@@ -92,9 +129,13 @@
 						<div class="card-body">
 							<h5 class="card-title">GTR R35</h5>
 							<p class="card-text">1000CV</p>
-							<a href="#" class="btn btn-primary">Comprar</a>
+							<p class="text-white bg-danger">R$ 780.000</p>
+
+							<a href="#" class="btn btn-warning"><i class="fa fa-cart-plus fa-2x" aria-hidden="true"></i></a>
+							<a href="#" class="btn btn-warning"><i class="fa fa-eye fa-2x"></i></a>
 						</div>
 					</div>
+					<br>
 				</div>
 				<div class="col-sm">
 					<div class="card" style="width: 18rem;">
@@ -102,16 +143,65 @@
 						<div class="card-body">
 							<h5 class="card-title">GTR R35</h5>
 							<p class="card-text">1000CV</p>
-							<a href="#" class="btn btn-primary">Comprar</a>
+							<p class="text-white bg-danger">R$ 780.000</p>
+
+							<a href="#" class="btn btn-warning"><i class="fa fa-cart-plus fa-2x" aria-hidden="true"></i></a>
+							<a href="#" class="btn btn-warning"><i class="fa fa-eye fa-2x"></i></a>
 						</div>
-					</div>				 
+					</div>
+					<br>
 				</div>
+				<div class="col-sm">
+					<div class="card" style="width: 18rem;">
+						<img class="card-img-top" src="gtr.jpg" alt="Imagem de capa do card">
+						<div class="card-body">
+							<h5 class="card-title">GTR R35</h5>
+							<p class="card-text">1000CV</p>
+							<p class="text-white bg-danger">R$ 780.000</p>
+
+							<a href="#" class="btn btn-warning"><i class="fa fa-cart-plus fa-2x" aria-hidden="true"></i></a>
+							<a href="#" class="btn btn-warning"><i class="fa fa-eye fa-2x"></i></a>
+						</div>
+					</div>
+					<br>
+				</div>
+
+				<!-- carousel com 3 imagem -->
+				<div class="row no-gutters bg-dark text-white position-relative">
+				  <div class="col-md-6 mb-md-0 p-md-4">
+				    
+				    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+					  <div class="carousel-inner">
+					    <div class="carousel-item active">
+					        <img src="gtr.jpg" class="d-block w-100" alt="...">
+					    </div>
+					    <div class="carousel-item">
+					      <img src="gtr.jpg" class="d-block w-100" alt="...">
+					    </div>
+					    <div class="carousel-item">
+					      <img src="gtr.jpg" class="d-block w-100" alt="...">
+					    </div>
+					  </div>
+					</div>
+				  </div>
+				  <div class="col-md-6 position-static p-4 pl-md-0">
+				    <h5 class="mt-0 text-danger">THE BEST NISSAN GTR</h5>
+				    <p>O Nissan GT-R é um modelo de automóvel superesportivo produzido pela Nissan, foi anunciado em 2001 com o objectivo de dar sequencia a marca GT-R (que surgiu na década de 1960 que fez sucesso com o Skyline), em 6 de Dezembro de 2007 foi oficialmente lançado no Japão, em 2008 chegou aos Estados Unidos, Canadá e Portugal, no resto do mundo apenas em 2009. O modelo 2007 possui um motor 3.8 V6 Biturbo com potência de 485Cv (362 kW) e 59.95Kgfm (588,0N.m.) de torque, acoplado a uma transmissão automatizada de 6 marchas com dupla embreagem e sistema de tração AWD ATTESA E-TS®, esse conjunto fornece desempenho capaz de levar os 1740Kg de 0–100 km/h em 2.7s e tem velocidade máxima de 385 à 395 km/h.</p>
+				    <a href="#" type="button" class="btn btn-outline-danger stretched-link">Veja Mais</a>
+				  </div>
+				</div>
+				<!-- FIM DO CAROUSEL -->
+
 			</div>
 			<!--
 			<img src="gtr.jpg" class="img-fluid" alt="Imagem responsiva">
 		-->
 	</div>
 </main>
+<br>
+<footer>
+	<div class="p-3 mb-2 bg-warning text-dark text-center">Desenvolvido por Sarah </div>
+</footer>
 </body>
 
 <!-- Iniciando arquivos js -->
